@@ -52,8 +52,8 @@ export default function Carousel() {
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src={image.src || "/placeholder.svg"} alt={image.alt} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-transparent bg-opacity-30 flex items-center justify-center">
+          <img src={image.src || "/saberLife.jpg"} alt={image.alt} className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-[rgba(0,0,0,0.5)] flex items-center justify-center">
             <div className="text-center text-white px-4">
               <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Educação Integral e Bilíngue</h2>
               <p className="text-lg md:text-xl mb-6 text-pretty">Desenvolvendo o potencial completo de cada criança</p>
