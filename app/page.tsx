@@ -2,7 +2,6 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Carousel from "@/components/carousel"
 import ProgramCard from "@/components/program-card"
-import ContactForm from "@/components/contact-form"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Heart, Music, Sprout, Clock, Home, Users, BookOpen, Globe } from "lucide-react"
@@ -97,16 +96,64 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Quer saber mais sobre nossa escola?</h2>
-          <p className="text-lg mb-8 text-pretty max-w-2xl mx-auto">
-            Agende uma visita e conheça de perto nossa estrutura, metodologia e equipe pedagógica
-          </p>
-          <Button size="lg" variant="secondary" asChild>
-            <a href="/contato">Agendar visita</a>
-          </Button>
+      {/* Instagram Section */}
+      <section className="bg-muted py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Siga-nos no Instagram</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+              Acompanhe nosso dia a dia e veja de perto as atividades e projetos da nossa escola.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Substitua '#' pelo link real de cada post e a imagem em `src` */}
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block group">
+              <div className="aspect-square bg-background rounded-lg overflow-hidden">
+                <img
+                  src="/saberLife.jpg"
+                  alt="Post do Instagram 1"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block group">
+              <div className="aspect-square bg-background rounded-lg overflow-hidden">
+                <img
+                  src="/saberLife.jpg"
+                  alt="Post do Instagram 2"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block group">
+              <div className="aspect-square bg-background rounded-lg overflow-hidden">
+                <img
+                  src="/saberLife.jpg"
+                  alt="Post do Instagram 3"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block group">
+              <div className="aspect-square bg-background rounded-lg overflow-hidden">
+                <img
+                  src="/saberLife.jpg"
+                  alt="Post do Instagram 4"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div className="text-center mt-12">
+            {/* Substitua '#' pelo link do perfil do Instagram */}
+            <Button size="lg" asChild>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Seguir no Instagram
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -183,10 +230,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {
-        /*Adicionar seção Instagram*/ 
-      }
 
       {/* Second CTA Banner */}
       <section className="bg-primary text-primary-foreground py-16">
